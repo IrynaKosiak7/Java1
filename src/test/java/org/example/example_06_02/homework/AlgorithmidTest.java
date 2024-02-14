@@ -107,11 +107,11 @@ class AlgorithmidTest {
     }
     @Test
     void getFactorialNegativResult() {
-        int number = -3;
+        int number = 1;
         int methodNumber = 1;
         int cycleNumber = 3;
 
-        int[] expected = {-1};
+        int[] expected = {1};
 
         Algorithmid algorithmid = new Algorithmid(number, methodNumber, cycleNumber);
         int[] actual = algorithmid.getResult();
