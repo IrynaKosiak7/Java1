@@ -13,7 +13,7 @@ class AlgorithmidTest {
         int methodNumber = 2;
         int cycleNumber = -3;
 
-        int[] expected = {0, 1, 1, 2, 3, 5, 8, 13, 21};
+        int[] expected = {-1};
 
         Algorithmid algorithmid = new Algorithmid(number, methodNumber, cycleNumber);
         int[] actual = algorithmid.getResult();
@@ -21,6 +21,7 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
    @Test
    void getNegativResult() {
         int number = -9;
@@ -35,6 +36,7 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     void getFibonacciResult() {
         int number = 5;
@@ -49,8 +51,9 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    void getFibonacciNegativResult() {
+    void getFibonacciNegativeResult() {
         int number = 0;
         int methodNumber = 2;
         int cycleNumber = 1;
@@ -63,8 +66,9 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    void getFibonacciNegativMethod() {
+    void getFibonacciNegativeMethod() {
         int number = 5;
         int methodNumber = 5;
         int cycleNumber = 1;
@@ -77,8 +81,9 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    void getFibonacciNegativCycle() {
+    void getFibonacciNegativeCycle() {
         int number = 5;
         int methodNumber = 2;
         int cycleNumber = -3;
@@ -91,6 +96,7 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     void getFactorialResult() {
         int number = 3;
@@ -105,8 +111,9 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    void getFactorialNegativResult() {
+    void getFactorialNegativeResult() {
         int number = 1;
         int methodNumber = 1;
         int cycleNumber = 3;
@@ -119,8 +126,9 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    void getFactorialNegativMethod() {
+    void getFactorialNegativeMethod() {
         int number = 3;
         int methodNumber = 4;
         int cycleNumber = 2;
@@ -133,8 +141,9 @@ class AlgorithmidTest {
         // then
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    void getFactorialNegativCycle() {
+    void getFactorialNegativeCycle() {
         int number = 5;
         int methodNumber = 1;
         int cycleNumber = 0;
